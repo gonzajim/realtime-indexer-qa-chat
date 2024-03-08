@@ -40,9 +40,9 @@ if "messages" not in st.session_state.keys():
     from llama_index.llms.types import ChatMessage, MessageRole
     from rag import chat_engine, vector_client
 
-    welcome_message = "Bienvenido al chatbot conversacional del observatorio de la UCLM sobre diligencia debida en Sostenibilidad."
+    welcome_message = "Escribe tu mensaje"
     DEFAULT_MESSAGES = [
-        ChatMessage(role=MessageRole.USER, content="What is Pathway?"),
+        ChatMessage(role=MessageRole.USER, content="Bienvenido al chatbot conversacional del observatorio de la UCLM sobre diligencia debida en Sostenibilidad."),
         ChatMessage(role=MessageRole.ASSISTANT, content=welcome_message),
     ]
     chat_engine.chat_history.clear()
