@@ -8,19 +8,13 @@ from endpoint_utils import get_inputs
 
 DRIVE_URL = os.environ.get(
     "GDRIVE_FOLDER_URL",
-    "https://drive.google.com/drive/u/0/folders/1cULDv2OaViJBmOfG5WB0oWcgayNrGtVs",
+    "https://drive.google.com/drive/folders/1FXLRopdqEn3VxZyEgghsxhsN7_ZrZ9UQ",
 )
 htm = f"""
 <div style="display: flex; align-items: center; vertical-align: middle">
     <a href="{DRIVE_URL}" style="text-decoration:none;">
       <figure style="display: flex; vertical-align: middle; margin-right: 20px; align-items: center;">
         <img src="./app/static/Google_Drive_logo.png" width="30" alt="Google Drive Logo">
-        <figcaption>Upload</figcaption>
-      </figure>
-    </a>
-    <a href="https://navalgo.sharepoint.com/:f:/s/ConnectorSandbox/EgBe-VQr9h1IuR7VBeXsRfIBuOYhv-8z02_6zf4uTH8WbQ?e=YmlA05" style="text-decoration:none;">
-      <figure style="display: flex; vertical-align: middle; align-items: center; margin-right: 20px;">
-        <img src="./app/static/sharepoint.png" width="30" alt="Google Drive Logo">
         <figcaption>Upload</figcaption>
       </figure>
     </a>
