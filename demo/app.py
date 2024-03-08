@@ -40,10 +40,10 @@ if "messages" not in st.session_state.keys():
     from llama_index.llms.types import ChatMessage, MessageRole
     from rag import chat_engine, vector_client
 
-    pathway_explaination = "Pathway is a high-throughput, low-latency data processing framework that handles live data & streaming for you."
+    welcome_message = "Bienvenido al chatbot conversacional del observatorio de la UCLM sobre diligencia debida en Sostenibilidad."
     DEFAULT_MESSAGES = [
         ChatMessage(role=MessageRole.USER, content="What is Pathway?"),
-        ChatMessage(role=MessageRole.ASSISTANT, content=pathway_explaination),
+        ChatMessage(role=MessageRole.ASSISTANT, content=welcome_message),
     ]
     chat_engine.chat_history.clear()
 
