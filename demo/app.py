@@ -10,51 +10,7 @@ DRIVE_URL = os.environ.get(
     "GDRIVE_FOLDER_URL",
     "https://drive.google.com/drive/folders/1FXLRopdqEn3VxZyEgghsxhsN7_ZrZ9UQ",
 )
-htm = f"""
-<div style="display: flex; align-items: center; vertical-align: middle">
-    <a href="{DRIVE_URL}" style="text-decoration:none;">
-      <figure style="display: flex; vertical-align: middle; margin-right: 20px; align-items: center;">
-        <img src="./app/static/Google_Drive_logo.png" width="30" alt="Google Drive Logo">
-        <figcaption>Upload</figcaption>
-      </figure>
-    </a>
-</div>
-<div style="font-size: 10px">* These are public folders. Please do not upload confidential files.</div>
-<div><br></div>
-<a href="https://cloud.pathway.com/?modal=getstarted" style="text-decoration:none;">
-    <figure style="display: flex; vertical-align: middle; align-items: center; margin-right: 20px;">
-    <button>Connect to your folders with Pathway</button>
-    </figure>
-</a>
-"""
 
-st.set_page_config(
-    page_title="Realtime Document AI pipelines", page_icon="./app/static/favicon.ico"
-)
-
-with st.sidebar:
-    st.markdown("**Add Your Files**")
-    st.markdown(htm, unsafe_allow_html=True)
-
-    st.markdown("\n\n\n\n\n\n\n")
-    st.markdown("\n\n\n\n\n\n\n")
-    st.markdown(
-        "[View code on GitHub.](https://github.com/pathway-labs/chat-realtime-sharepoint-gdrive)"
-    )
-
-    st.markdown(
-        """Pathway pipelines ingest documents from [Google Drive](https://drive.google.com/drive/u/0/folders/1cULDv2OaViJBmOfG5WB0oWcgayNrGtVs) and [Sharepoint](https://navalgo.sharepoint.com/:f:/s/ConnectorSandbox/EgBe-VQr9h1IuR7VBeXsRfIBuOYhv-8z02_6zf4uTH8WbQ?e=YmlA05) simultaneously. It automatically manages and syncs indexes enabling RAG applications."""
-    )
-
-    st.markdown(
-        """**Ready to build your own?**
-
-Our [docs](https://pathway.com/developers/showcases/llamaindex-pathway/) walk through creating custom pipelines with LlamaIndex.
-
-**Want a hosted version?**
-
-Check out our [hosted document pipelines](https://cloud.pathway.com/docindex)."""
-    )
 
 
 # Load environment variables
