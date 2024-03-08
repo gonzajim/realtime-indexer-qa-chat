@@ -75,7 +75,7 @@ st.write(
 
 htt = """
 <p>
-    <span> Built With: </span>
+    <span> Arquitectura: </span>
     <img src="./app/static/combinedhosted.png" width="300" alt="Google Drive Logo">
 </p>
 """
