@@ -69,7 +69,7 @@ load_dotenv()
 
 # Streamlit UI elements
 st.write(
-    "## Chat with all your enterprise documents realtime ⚡ in Google Drive & Sharepoint"
+    "## UCLM ReCaVa Chatbot ⚡ RAG en S3"
 )
 
 
